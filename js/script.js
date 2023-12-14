@@ -43,7 +43,7 @@
 
 // console.log(2 + 5 * 5 !== 27);
 
-const numbersOfFilms = prompt("How many films do you watching?", "");
+const numbersOfFilms = +prompt("How many films do you watching?", "");
 
 const personalMovieDB = {
   count: numbersOfFilms,
@@ -57,6 +57,7 @@ const a = +prompt("Which last film do you watch?", "");
 b = +prompt("How much do you value?", "");
 c = +prompt("Which last film do you watch?", "");
 d = +prompt("How much do you value?", "");
+
 personalMovieDB.movies[a] = b;
 personalMovieDB.movies[c] = d;
 
