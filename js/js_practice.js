@@ -139,3 +139,129 @@
 //     }
 //   }
 // }
+
+// let res = "";
+// let lenght = 10;
+
+// for (let i = 1; i < lenght; i++) {
+//   for (let j = 0; j < i; j++) {
+//     res += "*";
+//   }
+
+//   res += "\n";
+// }
+// console.log(res);
+
+// function showFirstMess(text) {
+//   console.log(text);
+// }
+
+// showFirstMess("Strike!!!");
+
+// const num = 100;
+// function calc(a, b) {
+//   return a * b;
+// }
+// console.log(calc(3, 5));
+
+// function run() {
+//   let num = 50;
+//   return num;
+// }
+
+// const anyMun = run();
+// console.log(anyMun);
+// console.log(num);
+
+// const myFn = function () {
+//   console.log("hi JS!!!");
+// };
+// myFn();
+
+// const myFnTwo = (a, b, c) => a + b * c;
+// console.log(myFnTwo(5, 105, 10));
+
+// -----------------------------------------------------Convert---------
+// let userValue = +prompt("Value");
+
+// function convert(userValue) {
+//   alert(28 * userValue);
+// }
+
+// convert(userValue);
+
+// const cursUsd = 28;
+// const cursUk = 32;
+// const cursPl = 10;
+
+// function convert(amount, curr) {
+//   alert(amount * curr);
+// }
+
+// convert(+prompt("amountPL"), cursPl);
+// convert(amount, cursUk);
+// convert(amount, cursUsd);
+
+// const first = +prompt("First number");
+// const second = +prompt("Second number");
+
+// function sum(one, two) {
+//   alert(one - two);
+// }
+// sum(first, second);
+
+// const cursUsd = 28;
+// const cursUk = 32;
+// const cursPl = 10;
+// const disc = 10;
+// const sumNumber = 101;
+// const min2sum = 30;
+
+// function convert(amount, curr) {
+//   return amount * curr;
+// }
+
+// function discount(result) {
+//   return result * disc;
+// }
+// function sum(discRes) {
+//   return discRes + sumNumber;
+// }
+
+// function sum2(resultSum) {
+//   alert(resultSum - min2sum);
+// }
+// const resConvert = convert(10, cursPl);
+// const discountRes = discount(resConvert);
+// resSum2 = sum2(sum(discountRes));
+
+// function test() {
+//   for (let i = 0; i < 5; i++) {
+//     console.log(i);
+//     if (i === 3) {
+//       return;
+//     }
+//   }
+// }
+// test();
+
+// const myArray = [5, 5, 2, 3, 1, 4, 7, 8];
+// const myString = "Hello Java-Script";
+
+// // const newArray = myArray.toSorted();
+// // console.log(newArray);
+
+// // console.log(myString.toLocaleLowerCase());
+// // console.log(myString.toUpperCase());
+
+// // console.log(myString.toUpperCase().indexOf("JAVA"));
+// // console.log(myString.slice(6, 10));
+// // console.log(myString.substring(5, 1));
+// // console.log(myString.substr(6, 4));
+
+// const myNum = 12.32;
+// console.log(Math.round(myNum));
+
+// const num = "15.32px";
+// console.log(parseInt(num));
+// console.log(parseFloat(num));
