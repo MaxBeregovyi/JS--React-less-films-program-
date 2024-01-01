@@ -265,3 +265,179 @@
 // const num = "15.32px";
 // console.log(parseInt(num));
 // console.log(parseFloat(num));
+
+// ------------------------------------------------------------------------------------
+
+// Callback FUNCTION!!!
+
+// function myCallbackFn(text, callback) {
+//   console.log(`I learn ${text}`);
+//   callback();
+// }
+
+// function done() {
+//   console.log("I DO IT!!!");
+// }
+
+// myCallbackFn("Java Script", done);
+
+// myCallbackFn("Java Script", function () {
+//   console.log("I DO IT!!!");
+// });
+
+// ------------------------------------------------------------------------------------
+// Деструктаризацияф обєкта
+
+// const myObject = {
+//   name: "Striker",
+//   city: "New York",
+//   width: "2000px",
+//   age: 32,
+//   color: {
+//     bg: "blue",
+//     border: "red",
+//   },
+// };
+
+// console.log(myObject);
+// delete myObject.name;
+// console.log(myObject);
+
+// let count = 0;
+// for (let key in myObject) {
+//   if (typeof myObject[key] === "object") {
+//     for (let el in myObject[key]) {
+//       console.log(`${el} have value ${myObject[key][el]}`);
+//     }
+//   } else {
+//     console.log(`${key} have value ================ ${myObject[key]}`);
+//   }
+// }
+
+// const firstObj = {
+//   age: 33,
+//   name: "Max",
+//   cars: "Vw",
+//   money: 30000000000000,
+// };
+// console.log(Object.keys(firstObj).length);
+// const secondObj = {
+//   age: 33,
+//   name: "Max",
+//   cars: {
+//     a: "Vw",
+//     b: "Porshe",
+//     c: "BMW",
+//     d: "Tesla",
+//   },
+//   money: 30000000000000,
+//   city: "Dominicana Republic",
+//   makeTest: function () {
+//     console.log("Hello Java Script");
+//   },
+// };
+// secondObj.makeTest();
+// console.log(Object.keys(secondObj).length);
+// console.log(Object.keys(myObject).length);
+
+// let { bg, border } = myObject.color;
+// let { a, b, c } = secondObj.cars;
+// console.log(bg);
+// console.log(bg, border);
+// console.log(a, b, c);
+
+// ------------------------------------------------------------------------------------
+
+// Масивы Array
+
+// const myArray = [1, 3, 5, 4, 2, 6, 10, 8];
+// myArray.sort((a, b) => b - a);
+// let sortArray = myArray.toSorted((a, b) => a - b);
+// console.log(myArray);
+// console.log(sortArray);
+
+// function ciompareNumber(a, b) {
+//   return a - b;
+// }
+
+// myArray.push(100);
+
+// // for (let el of myArray) {
+// //   console.log(el);
+// // }
+
+// // myArray.forEach(function (item, i, arr) {
+// //   console.log(`${item} : ${i} have array ${arr}`);
+// // });
+// // myArray.forEach((el, i, arr) => {
+// //   console.log(`${el} have ${i} and have arr ${arr}`);
+// // });
+
+// const str = prompt("", "");
+// const products = str.split(", ");
+
+// console.log(products.join("-"));
+
+// ------------------------------------------------------------------------------------
+// Клонирование масивов и обєкта
+
+// const myObj = {
+//   a: 20,
+//   b: "Max",
+//   c: "New York",
+// };
+// const secondObj = {
+//   age: 33,
+//   name: "Max",
+//   cars: {
+//     a: "Vw",
+//     b: "Porshe",
+//     c: "BMW",
+//     d: "Tesla",
+//   },
+// };
+// const joinObject = { ...myObj, ...secondObj, street: "Lamas" };
+// console.log(Object.keys(joinObject));
+// console.log(joinObject);
+
+// const cloneObj = Object.assign({}, myObj);
+// cloneObj.d = 200;
+// cloneObj.a = 100;
+
+// console.log(cloneObj);
+// console.log(myObj);
+
+// const newObj = { ...myObj, d: 200 };
+// delete newObj.a;
+// console.log(newObj);
+// console.log(myObj);
+
+// const myArray = ["d", "c", "A", "Java Script"];
+// const newArray = myArray.slice();
+// newArray.push("HI");
+
+// console.log(newArray);
+// console.log(myArray);
+
+// ----------------------------------------------------------------------
+
+// SET PROTOTYPE
+
+// const solder = {
+//   health: 500,
+//   strenght: 2000,
+//   armor: 300,
+//   sayHello: function () {
+//     console.log("Hello!!!");
+//   },
+// };
+
+// const lightSolder = Object.create(solder);
+// lightSolder.sayHello();
+
+// const lightSolder = {
+//   health: 200,
+// };
+
+// Object.setPrototypeOf(lightSolder, solder);
+// lightSolder.sayHello();
